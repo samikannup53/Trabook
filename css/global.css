@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #fa7436;
+  --secondary-color: #ffffff;
+  --text-color-black: #222222;
+  --text-color-gray: #444444;
+  --text-color-gray01: #666666;
+  --text-color-gray02: #999999;
+  --bg-color-primary: #fefcfb;
+  --bg-color-secondary: #f7f8fc;
+
+  --ff-primary: "Poppins", serif, sans-serif;
+  --ff-style: "Volkhov", serif, sans-serif;
+
+  --animation: 2s;
+
+  --desktop: (width: 1200px);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-style);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+
+/*----------------Global Styles------------------*/
+.btn-active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.btn-normal {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+}
+
+.active-arrow-icon {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 0.12em 0.2em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.normal-arrow-icon {
+  background-color: var(--secondary-color);
+  color: #9999998f;
+  border: 1px solid #9999998f;
+  border-radius: 50%;
+  padding: 0.12em 0.2em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.active-icon {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.normal-icon {
+  background-color: var(--secondary-color);
+  color: var(--text-color-gray);
+}
+
+.sticker {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.heading-main {
+  color: var(--text-color-black);
+}
+
+.heading-color {
+  color: var(--primary-color);
+}
+
+.description {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray01);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.deals-card-title {
+  font-family: var(--ff-primary);
+  color: var(--text-color-black);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.deals-card-location {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray01);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.rating {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray01);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.deals-card-rate {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray02);
+  font-size: 1.12rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.deals-card-offer-rate {
+  font-family: var(--ff-primary);
+  color: var(--primary-color);
+  font-size: 1.12rem;
+  font-weight: 600;
+  background-color: #ffe7db;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2em 0.4em;
+}
+
+.plans-card-countryname {
+  font-family: var(--ff-primary);
+  color: var(--text-color-black);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.plans-card-rate {
+  font-family: var(--ff-primary);
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.plan-duration {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray01);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.about-message-content {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.about-message-person {
+  font-family: var(--ff-primary);
+  color: var(--text-color-black);
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.about-message-location {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray01);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.blog-card-content {
+  font-family: var(--ff-primary);
+  color: var(--text-color-black);
+  font-size: 1.12rem;
+  font-weight: 500;
+  padding: 0.8em 0;
+}
+
+.blog-card-date {
+  font-family: var(--ff-primary);
+  color: var(--text-color-gray02);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.subscribe-title {
+  color: var(--secondary-color);
+  font-family: var(--ff-style);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.footer-nav-links a {
+  color: var(--text-color-gray01);
+  font-family: var(--ff-primary);
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.footer-nav-bar-heading {
+  color: var(--text-color-black);
+  font-family: var(--ff-primary);
+  font-size: 1.12rem;
+  font-weight: 600;
+  padding-bottom: 0.8em;
+}
+
+.footer-content p {
+  color: var(--text-color-gray01);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.copyright {
+  color: var(--text-color-gray01);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 400;
+}
