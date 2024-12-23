@@ -146,7 +146,6 @@
   .home-content h1 {
     font-size: 2.8rem;
     text-align: center;
-    width: 90%;
   }
   .home-content p {
     width: 100%;
@@ -489,3 +488,5 @@
     text-align: center;
   }
 }
+
+
