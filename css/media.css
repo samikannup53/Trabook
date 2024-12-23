@@ -27,7 +27,7 @@
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 2.8rem;
-    width:85%;
+    width: 85%;
   }
   .header-nav-banner {
     gap: 3em;
@@ -63,7 +63,7 @@
     font-size: 2.8rem;
     width: 80%;
   }
-  .home-content p{
+  .home-content p {
     width: 70%;
   }
   h2 {
@@ -89,17 +89,31 @@
   }
 }
 
-@media screen and (max-width:612px) {
+@media screen and (max-width: 612px) {
   h1 {
     font-size: 2.5rem;
-    width:90%;
+    width: 90%;
   }
-  .home-content p{
-    width:100%;
+  .home-content p {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .header-container,
+  .home-container,
+  .todo-container,
+  .deals-container,
+  .plan-container,
+  .footer-container {
+    overflow: hidden;
+  }
+  .logo h3 {
+    font-size: 2.3em;
+  }
+  .logo img {
+    height: 30px;
+  }
   .header-nav-banner {
     display: none;
   }
@@ -125,21 +139,25 @@
   .home-content {
     width: 100%;
     margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .home-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     text-align: center;
+    width: 90%;
   }
   .home-content p {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   .home-content a {
-    display: block;
     text-align: center;
-    margin: 0 5em;
-    font-size: 1rem;
+    margin: 0 auto 1.8em auto;
+    font-size: 1.5rem;
+    padding: 0.8em 2em;
   }
   .home-image {
     width: 100%;
@@ -160,22 +178,32 @@
     left: 23px;
   }
   .home-explore {
-    margin-top: 100%;
-    margin-bottom: 3em;
+    margin-top: 120%;
+    margin-bottom: 0;
     flex-direction: column;
     gap: 2em;
     width: 80%;
     align-items: center;
     text-align: center;
+    padding: 3em 0;
+    border-radius: 10px;
   }
   .home-image h4 {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   .home-image p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   .home-exp-btn {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    padding: 0.7em 1.8em;
+  }
+  .home-explore h4 {
+    font-size: 1.5rem;
+  }
+
+  .home-explore p {
+    font-size: 1.2rem;
   }
   .home-image-award-sticker {
     left: -7%;
@@ -202,12 +230,13 @@
     width: 20%;
   }
   .todo-content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
+    width: 80%;
   }
   .todo-content p {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .todo-cards-container {
@@ -222,9 +251,11 @@
   }
   .todo-card p {
     text-align: center;
+    font-size: 1.3rem;
   }
   .todo-card h3 {
     text-align: center;
+    font-size: 1.5rem;
   }
   .todo-content-image {
     width: 25%;
@@ -235,12 +266,13 @@
     width: 75%;
   }
   .deals-info h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   .deals-info p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
+    width: 80%;
   }
   .deals-card-container {
     flex-wrap: wrap;
@@ -251,10 +283,20 @@
     width: 45%;
   }
   .deals-card-rate {
-    font-size: 1rem;
+    font-size: 1.12rem;
   }
   .deals-card-offer-rate {
-    font-size: 1rem;
+    font-size: 1.12rem;
+  }
+  .deals-card-title {
+    font-size: 1.5rem;
+  }
+  .deals-card-location {
+    font-size: 1.12rem;
+  }
+
+  .rating {
+    font-size: 1.2rem;
   }
   .deals-nav-btn-container {
     padding: 3.5em;
@@ -263,17 +305,18 @@
     justify-content: center;
   }
   .plan-info h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   .plan-info p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
+    width: 90%;
   }
   .plan-info img {
     position: absolute;
     top: 0;
-    left: 80%;
+    left: 85%;
     width: 15%;
   }
   .plan-nav-btn-container {
@@ -291,18 +334,34 @@
   .plan-card {
     width: 65%;
   }
+  .plans-card-countryname {
+    font-size: 1.5rem;
+  }
+  .plans-card-rate {
+    font-size: 1.5rem;
+  }
+
+  .plan-duration {
+    font-size: 1.2rem;
+  }
   .about-container {
     flex-direction: column;
     justify-content: center;
   }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .about-content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: -3em 0 0.5em 0;
   }
   .about-content p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
+    width: 90%;
   }
   .about-popup-container {
     width: 100%;
@@ -313,12 +372,29 @@
     right: 0;
     width: 20%;
   }
+  .about-message-content {
+    font-size: 1.3rem;
+  }
+
+  .about-message-person {
+    font-size: 1.2rem;
+  }
+  .about-message-location {
+    font-size: 1rem;
+  }
+  .about-popup-card-back {
+    top: 40%;
+    left: 8%;
+  }
+  .about-popup-card {
+    padding: 1.5em 2em 0.2em 2em;
+  }
   .about-nav-btn-container {
     display: flex;
     justify-content: center;
   }
   .blog-container > h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .blog-cards-container {
     flex-wrap: wrap;
@@ -328,6 +404,12 @@
   .blog-card {
     width: 45%;
   }
+  .blog-card-content {
+    font-size: 1.3rem;
+  }
+  .blog-card-date {
+    font-size: 1.3rem;
+  }
   .blog-nav-btn-container {
     padding: 3em 0 7em 0;
   }
@@ -335,7 +417,7 @@
     width: 70%;
   }
   .subscribe-banner h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .subscribe-tree-image {
     top: 30px;
@@ -382,9 +464,20 @@
   .footer-content p {
     padding: 0;
     text-align: center;
+    font-size: 1.4rem;
   }
   .footer-content > h3 {
     margin-left: -50px;
+    font-size: 2.2rem;
+  }
+  .footer-nav-links a {
+    font-size: 1.5rem;
+  }
+  .footer-nav-bar-heading {
+    font-size: 1.8rem;
+  }
+  .footer-social-icons i {
+    font-size: 1.5rem;
   }
   .footer-copyright {
     width: 100%;
